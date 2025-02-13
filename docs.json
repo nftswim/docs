@@ -59,7 +59,7 @@
             ]
           },
           {
-            "group": "Infrastructure",
+          "group": "Infrastructure",
             "pages": [
               "infrastructure/Architecture2",
               {
