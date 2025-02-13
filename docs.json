@@ -7,7 +7,7 @@
     "light": "#e78bfe",
     "dark": "#e78bfe"
   },
-  "favicon": "/LOGO-thick-2.png",
+  "favicon": "/LOGO-thick 2.png",
   "navigation": {
     "tabs": [
       {
@@ -41,19 +41,16 @@
               },
               {
           "group": "On-Device LLMs",
-          "pages": [
+            "pages": [
             "personal-ai-protocol/What-are-On-Device-LLMs",
             "personal-ai-protocol/Personal-Index",
-            "personal-ai-protocol/On-Device-Models",
-            "personal-ai-protocol/Pin-AI-App"
+            "personal-ai-protocol/On-Device-Models"
           ]
               },
               {
-          "group": "God Models",
-          "pages": [
-            "personal-ai-protocol/God-Models",
-            "personal-ai-protocol/Technical-Design",
-            "personal-ai-protocol/God-Model-Rewards"
+            "group": "God Models",
+            "pages": [
+            "personal-ai-protocol/God-Models"
           ]
               }
             ]
@@ -84,7 +81,7 @@
     ]
   },
   "logo": {
-    "light": "/logo/DocLogo.png",
+    "light": "/logo/logo-svg.svg",
     "dark": "/logo/DocLogo.png"
   },
   "navbar": {
