@@ -60,15 +60,15 @@
           },
           {
           "group": "Infrastructure",
-            "pages": [
-              "infrastructure/Architecture2",
-              {
-                  "group": "TEE Nodes",
-                  "pages": [
-                  "infrastructure/TEEs",
-                  "infrastructure/Hosting-Data-Connectors",
-                  "infrastructure/Private-LLM-Inference",
-                  "infrastructure/Staking-and-Rewards"
+  "pages": [
+    "infrastructure/Architecture2",
+    {
+      "group": "TEE Nodes",
+      "pages": [
+        "infrastructure/TEEs",
+        "infrastructure/Hosting-Data-Connectors",
+        "infrastructure/Private-LLM-Inference",
+        "infrastructure/Staking-and-Rewards"
                   ]
                 }
               ]
