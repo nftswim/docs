@@ -59,38 +59,12 @@
             ]
           },
           {
-            "group": "Infrastructure",
+            "group": "Infra3",
             "pages": [
-              "infrastructure/TEEs"
-            ]
-          },
-          {
-            "group": "PIN Economy",
-            "pages": [
-              "pin-economy/Token-Overview",
-              "pin-economy/PIN-Utility"
+              "infra3/Architecture"
             ]
           }
         ]
-      }
-    ]
-  },
-  "global": {
-    "anchors": [
-      {
-        "anchor": "Whitepaper",
-        "href": "https://docsend.com/view/a4ypae7b3u3snb7i",
-        "icon": "book-open-cover"
-      },
-      {
-        "anchor": "Community",
-        "href": "https://discord.com/invite/pinai",
-        "icon": "discord"
-      },
-      {
-        "anchor": "Blog",
-        "href": "https://www.pinai.io/blog",
-        "icon": "newspaper"
       }
     ]
   },
