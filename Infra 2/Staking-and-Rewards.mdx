@@ -1,0 +1,26 @@
+---
+title: 'Crypto-economic security'
+---
+In the PIN Network, TEE Node Operators ensure secure and reliable data handling and processing by staking PIN tokens as collateral. Operators earn task-based rewards for high performance, but failure to complete tasks or follow protocol rules results in slashed stakes. This crypto-economic system aligns Operator incentives with network goals, promoting accountability and trust.
+
+## Proof of stake
+
+To run a Data Connector service in the PIN Network, Operators must stake PIN AI network tokens as collateral to ensure integrity and accountability. This aligns the economic interests of Operator with the network's goals. Key aspects include:
+
+- A higher stake increases the likelihood of job allocation, as the protocol considers staking amounts during random selection.
+- If an Operator fails to complete a task or violates protocol rules, their staked allocation may be slashed.
+- Maintaining the required staking threshold is essential for continued eligibility to operate as a Data Connector.
+
+## Process
+
+Data Connectors that run continuously require crypto-economic security to govern their quality and availability. This involves:
+
+1. Operators creating new Data Connectors and registering with the Slash Manager.
+2. Operators staking tokens to the Staking contract.
+3. The Slash Manager checking on-chain events/records emitted by Data Connectors.
+    - For example, the FB data connector must emit a ZK (TLS) proof to verify true data collection.
+4. If an on-chain event is missing, the Slash Manager slashes the Operator's staked tokens.
+
+## Rewards
+
+Operators are rewarded PIN AI tokens for delivering data services and maintaining the reliability and efficiency of the data pipeline infrastructure within the PIN AI ecosystem. Rewards are task-dependent, varying based on the complexity, type, and value of the data service delivered by the Operator.
