@@ -30,15 +30,15 @@
                 "pages": [
                   "personal-ai-protocol/Data-Connectors",
                   {
-                  "group": "Rewards",
-                  "pages": [
-                    "personal-ai-protocol/Data-Connector-Rewards",
-                    "personal-ai-protocol/Reward-Mechanism"
-                  ]
+                    "group": "Rewards",
+                    "pages": [
+                      "personal-ai-protocol/Data-Connector-Rewards",
+                      "personal-ai-protocol/Reward-Mechanism"
+                    ]
                   },
                   "personal-ai-protocol/Online-Data-Connectors"
                 ]
-                },
+              },
               {
                 "group": "On-Device LLMs",
                 "pages": [
@@ -57,29 +57,42 @@
                 ]
               }
             ]
+          },
+          {
+            "group": "Infrastructure",
+            "pages": [
+              "infrastructure/TEE"
+            ]
+          },
+          {
+            "group": "PIN Economy",
+            "pages": [
+              "pin-economy/Token-Overview",
+              "pin-economy/PIN-Utility"
+            ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Whitepaper",
-          "href": "https://docsend.com/view/a4ypae7b3u3snb7i",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://discord.com/invite/pinai",
-          "icon": "discord"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://www.pinai.io/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
+  },
+  "global": {
+    "anchors": [
+      {
+        "anchor": "Whitepaper",
+        "href": "https://docsend.com/view/a4ypae7b3u3snb7i",
+        "icon": "book-open-cover"
+      },
+      {
+        "anchor": "Community",
+        "href": "https://discord.com/invite/pinai",
+        "icon": "discord"
+      },
+      {
+        "anchor": "Blog",
+        "href": "https://www.pinai.io/blog",
+        "icon": "newspaper"
+      }
+    ]
   },
   "logo": {
     "light": "/logo/DocLogo.png",
