@@ -57,20 +57,7 @@
                 ]
               }
             ]
-          },
-          {
-            "group": "Infrastructure",
-            "pages": [
-              "infrastructure/Architecture"
-              ]
-              },
-            {
-            "group": "PIN Economy",
-            "pages": [
-              "pin-economy/Token-Overview"
-            ]
-
-            }
+          }
         ]
       }
     ],
