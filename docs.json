@@ -59,9 +59,9 @@
             "pages": [
               "Infrastructure/Architecture2",
               {
-            "group": "TEE Nodes",
-            "pages": [
-            "Infrastructure/TEEs",
+          "group": "TEE Nodes",
+          "pages": [
+            "TEE2",
             "Infrastructure/Hosting-Data-Connectors",
             "Infrastructure/Private-LLM-Inference",
             "Infrastructure/Staking-and-Rewards"
