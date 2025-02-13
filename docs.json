@@ -61,7 +61,7 @@
           {
             "group": "Infrastructure",
             "pages": [
-              "infrastructure/Architecture",
+              "infrastructure/Architecture2",
               {
                   "group": "TEE Nodes",
                   "pages": [
