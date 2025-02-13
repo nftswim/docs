@@ -17,7 +17,6 @@
             "group": "Get Started",
             "pages": [
               "introduction",
-              "quickstart",
               "High-level-view"
             ]
           },
@@ -60,8 +59,9 @@
             "pages": [
               "Infrastructure/Architecture2",
               {
-          "group": "TEE Nodes",
-          "pages": [
+            "group": "TEE Nodes",
+            "pages": [
+            "Infrastructure/TEEs",
             "Infrastructure/Hosting-Data-Connectors",
             "Infrastructure/Private-LLM-Inference",
             "Infrastructure/Staking-and-Rewards"
@@ -87,8 +87,8 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Blog",
+        "href": "https://www.pinai.io/blog"
       }
     ],
     "primary": {
