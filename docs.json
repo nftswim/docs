@@ -26,35 +26,35 @@
             "pages": [
               "personal-ai-protocol/overview",
               {
-                "group": "Data Connectors",
-                "pages": [
-                  "personal-ai-protocol/Data-Connectors",
-                  {
-                    "group": "Rewards",
-                    "pages": [
-                      "personal-ai-protocol/Data-Connector-Rewards",
-                      "personal-ai-protocol/Reward-Mechanism"
-                    ]
-                  },
-                  "personal-ai-protocol/Online-Data-Connectors"
-                ]
+          "group": "Data Connectors",
+          "pages": [
+            "personal-ai-protocol/Data-Connectors",
+            {
+              "group": "Rewards",
+              "pages": [
+                "personal-ai-protocol/Data-Connector-Rewards",
+                "personal-ai-protocol/Reward-Mechanism"
+              ]
+            },
+            "personal-ai-protocol/Online-Data-Connectors"
+          ]
               },
               {
-                "group": "On-Device LLMs",
-                "pages": [
-                  "personal-ai-protocol/What-are-On-Device-LLMs",
-                  "personal-ai-protocol/Personal-Index",
-                  "personal-ai-protocol/On-Device-Models",
-                  "personal-ai-protocol/Pin-AI-App"
-                ]
+          "group": "On-Device LLMs",
+          "pages": [
+            "personal-ai-protocol/What-are-On-Device-LLMs",
+            "personal-ai-protocol/Personal-Index",
+            "personal-ai-protocol/On-Device-Models",
+            "personal-ai-protocol/Pin-AI-App"
+          ]
               },
               {
-                "group": "God Models",
-                "pages": [
-                  "personal-ai-protocol/God-Models",
-                  "personal-ai-protocol/Technical-Design",
-                  "personal-ai-protocol/God-Model-Rewards"
-                ]
+          "group": "God Models",
+          "pages": [
+            "personal-ai-protocol/God-Models",
+            "personal-ai-protocol/Technical-Design",
+            "personal-ai-protocol/God-Model-Rewards"
+          ]
               }
             ]
           },
@@ -63,12 +63,12 @@
             "pages": [
               "Infrastructure/Architecture2",
               {
-                "group": "TEE Nodes",
-                "pages": [
-                  "Infrastructure/Hosting-Data-Connectors",
-                  "Infrastructure/Private-LLM-Inference",
-                  "Infrastructure/Staking-and-Rewards"
-                ]
+          "group": "TEE Nodes",
+          "pages": [
+            "Infrastructure/Hosting-Data-Connectors",
+            "Infrastructure/Private-LLM-Inference",
+            "Infrastructure/Staking-and-Rewards"
+          ]
               }
             ]
           },
@@ -76,8 +76,7 @@
             "group": "PIN Ecosystem",
             "pages": [
               "PIN-economy2/Token-Overview",
-              "PIN-economy2/PIN-Utility",
-              "PIN Economy/Green"
+              "PIN-economy2/PIN-Utility"
             ]
           }
         ]
