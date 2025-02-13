@@ -58,21 +58,27 @@
               }
             ]
           },
-            {
+          {
             "group": "Infrastructure",
             "pages": [
               "Infrastructure/Architecture2",
               {
-              "group": "TEE Nodes",
-              "pages": [
-                "Infrastructure/Hosting-Data-Connectors",
-                "Infrastructure/Private-LLM-Inference",
-                "Infrastructure/Staking-and-Rewards",
-                "Infrastructure/Become-a-TEE-Node-Operator"
-              ]
+                "group": "TEE Nodes",
+                "pages": [
+                  "Infrastructure/Hosting-Data-Connectors",
+                  "Infrastructure/Private-LLM-Inference",
+                  "Infrastructure/Staking-and-Rewards"
+                ]
               }
             ]
-            }
+          },
+          {
+            "group": "PIN Economy",
+            "pages": [
+              "pin-economy/Token-Overview",
+              "pin-economy/PIN-Utility"
+            ]
+          }
         ]
       }
     ]
