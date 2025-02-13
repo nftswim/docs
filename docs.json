@@ -61,7 +61,12 @@
           {
             "group": "Infrastructure",
             "pages": [
-              "infra3/Architecture"
+              "infra3/Architecture",
+              "Infrastructure/Architecture2",
+              "Infrastructure/Become-a-TEE-Node-Operator",
+              "Infrastructure/Hosting-Data-Connectors",
+              "Infrastructure/Private-LLM-Inference",
+              "Infrastructure/Staking-and-Rewards"
             ]
           }
         ]
