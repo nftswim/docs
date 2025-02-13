@@ -1,0 +1,27 @@
+---
+title: 'Rewards'
+---
+
+## Rewards Mechanism
+
+Total reward: 140M tokens in total.
+
+**Decay rate:** We have an annual decay rate of 0.51/3=79.37%0.5^{1/3} = 79.37\%0.51/3=79.37% per year, which is equivalent to a halving cycle of three years. This also means that if the total amount of tokens for the god model reward is 140M, we will allocate (1−0.51/3)×100M=28.882M(1 - 0.5^{1/3}) \times 100M = 28.882M(1−0.51/3)×100M=28.882M tokens for the first year, 0.51/3×28.882M=22.924M0.5^{1/3} \times 28.882M = 22.924M0.51/3×28.882M=22.924M tokens for the second year, and so on.
+
+
+**Issuance cycle:** We will allocate the reward weekly (we can also do daily, biweekly, or monthly). In this case, we will issue \(28.882M / 52 = 555,423\) tokens each time.
+
+**KYC policy and token issuance for each level:** Here is the design for the KYC policy:
+Once users reach a certain level, they are eligible to divide a percentage of the god model reward:
+- **At least Level 1:** 15% of total god model issuance.
+- **At least Level 2:** 60% of total god model issuance.
+- **At least Level 3:** 25% of total god model issuance.
+
+This means that for the first week:
+- Level 1, 2, and 3 users can divide \(15\% \times 555,423 = 83,313\) tokens proportional to their God Model Score.
+- Level 2 and 3 users can divide an additional \(60\% \times 555,423 = 333,254\) tokens proportional to their God Model Score.
+- Level 3 users can divide an additional \(25\% \times 555,423 = 138,856\) tokens proportional to their God Model Score.
+
+**Token allocation for users:** Once a user reaches a certain level, they can divide the corresponding amount of tokens within that level proportional to their God Model Scores.
+
+**God Model Score:** Each user is assigned a one-dimensional score, calculated as a weighted average of multidimensional scores across various categories, which are evaluated by the God Model.

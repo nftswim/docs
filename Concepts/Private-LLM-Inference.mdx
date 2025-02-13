@@ -1,0 +1,68 @@
+Trusted Execution Environments (TEEs) enable secure and private large language model (LLM) inference, ensuring that sensitive computations occur within an encrypted and isolated environment. This is useful for hosting God Node models.
+
+## Core functionality
+
+The core functionality focuses on securely performing privacy-preserving computations, including private LLM inference, while ensuring data confidentiality and integrity at every stage of execution.
+
+- **Secure model loading**: Loads encrypted models into the TEE, preventing unauthorized access.
+- **Protected inference**: Runs entire inference workflows securely within the enclave.
+- **Secure output handling**: Ensures results remain encrypted and protected during transmission and storage.
+
+## Key components
+
+The key components enable the secure management and execution of model inference workflows, ensuring efficiency, accuracy, and robust protection throughout the process.
+
+### Model management
+
+Manages the secure lifecycle of machine learning models, including storage, loading, and versioning:
+
+- **Encrypted model storage**: Stores models in encrypted format, preventing unauthorized access.
+- **Secure weight loading**: Loads model weights securely into the enclave to ensure integrity and authenticity.
+- **Version control & updates**: Implements secure version tracking and controlled updates to prevent tampering.
+
+### Inference pipeline
+
+The inference pipeline ensures that inputs, processing, and outputs are handled securely within the TEE, optimizing performance while preserving data privacy:
+
+- **Input preprocessing in TEE**: Cleans, formats, and normalizes incoming data before inference.
+- **Batched inference processing**: Groups multiple requests to optimize efficiency and resource usage.
+- **Output post-processing**: Ensures results remain encrypted, preventing data leaks or unauthorized exposure.
+
+## Security measures
+
+Security measures are implemented at multiple levels to protect models, data, and computations throughout the inference process:
+
+- **Model encryption at rest**: Encrypts model weights before and after inference to prevent unauthorized access.
+- **Secure inference runtime**: Ensures that inference operations only execute within verified TEEs.
+- **Memory protection**: Prevents unauthorized memory access, mitigating side-channel attacks.
+
+## Code snippet
+
+The following Go structs define the TEE-based LLM inference architecture, ensuring secure model execution and data protection.
+
+```go
+type LLMInference struct {
+    ModelID     string
+    ModelConfig ModelSettings
+    Runtime     TEERuntime
+}
+
+type ModelSettings struct {
+    // Model configuration
+    BatchSize      int
+    Precision      string
+    MaxInputLength int
+    // Security settings
+    EncryptionKey  []byte
+    AccessControl  Policy
+}
+
+type InferenceRequest struct {
+    // Input data for inference
+    Input []byte
+    // Metadata for processing
+    Metadata RequestMetadata
+    // Security context
+    SecurityContext Context
+}
+```

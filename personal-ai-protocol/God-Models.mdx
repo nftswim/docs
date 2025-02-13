@@ -1,0 +1,101 @@
+---
+title: 'Overview'
+description: 'What are God Models?'
+---
+God Models are specialized validation models deployed within Trusted Execution Environments (TEEs) across the PIN AI Network. They serve as an oversight layer (hence "God"), continuously evaluating the performance of Personal AIs to ensure accuracy, consistency, and alignment with user data.
+
+God Models perform the following functions:
+
+- Regularly test Personal AIs to ensure they maintain a deep and consistent understanding of their users.
+- Provide users with feedback, guiding them to properly build their Personal AI by integrating more Data Connectors.
+- Establish the foundation for a robust Agent Ecosystem by ensuring users continuously refine their Personal AI.
+- Detect and penalize data manipulation, adversarial behaviors, and synthetic data injection, ensuring Personal AI integrity.
+
+<div style={{ backgroundColor: '#e0f7fa', padding: '10px', borderRadius: '10px', border: '1px solid #00acc1', display: 'flex', alignItems: 'center' }}>
+    <div style={{ fontWeight: 'bold', fontSize: '20px', marginRight: '10px' }}>ℹ️</div>
+    <div>God stands for "Guardian of Data." The interactions between your Personal AI and a God Model are known only to you and the model.</div>
+</div>
+***
+## Evaluation Framework
+
+This section outlines how God Models evaluate and refine Personal AI performance through a structured process of querying, scoring, and validation.
+
+<img src="/images/Doc-God Model3.png" alt="God Model Diagram" style={{ display: 'block', margin: '0 auto', maxWidth: '100%' }} />
+
+### Initialization
+
+1. When a Personal AI is deployed locally on the user’s device and registered in the PIN AI Network, including:
+
+    - Verified data sources (Gmail, social media, e-commerce, crypto wallets, etc.).
+    - Interaction history and past responses.
+    - Activity patterns and behavioral trends.
+
+    The God Model is made aware of which data sources are active for each user.
+
+### Periodic or randomized queries
+
+2. The God Model assesses how effectively the Personal AI delivers user-specific contextual information to an external Personal AI Agent, enabling it to accurately fulfill the user’s request. Queries fall into three main categories:
+
+    - **Web 2.0-type user request**: Validating knowledge about social media, emails, calendar events, and online purchases.
+    - **Web3-type user request**: Evaluating transaction history, on-chain interactions, and token ownership.
+    - **Native AI agent-type user request**: Assessing AI understanding of lifestyle behaviors, health data, and IoT device interactions.
+
+### Response verification
+
+3. The Personal AI responds to queries referencing user data. The God Model checks the response against verified data logs or previously stored state (where possible) to assess how effectively the Personal AI delivers user-specific contextual information to an external Personal AI Agent.
+
+### Score adjustment
+
+4. The God Model assigns the Personal AI a "knowledge score" based on its responses.
+
+    - If the Personal AI's contextual information is sufficient for an external, to-be-built AI Agent to fulfill the user’s request, the score for that Personal AI is nudged upward.
+    - If the Personal AI's contextual information is insufficient for an external, to-be-built AI Agent to fulfill the user’s request, the score is penalized.
+    - If the Personal AI's contextual information is uncertain or partial and does not fully enable an external, to-be-built AI Agent to fulfill the user’s request, it may result in a neutral or slightly positive/negative adjustment depending on design.
+***
+## Scoring Function
+
+The scoring function reflects how effectively the Personal AI delivers user-specific contextual information to an external Personal AI Agent, enabling it to accurately fulfill the user’s request. It is based on the following parameters:
+
+1. **Agentic user request coverage**: 
+    The overall score is aggregated, weighting sources by importance or frequency of Agentic User Requests.
+
+2. **Consistency**: 
+    Cross-referencing data from multiple sources (e.g., does the travel booking date match the email confirmation date?)
+
+3. **Temporal accuracy**: 
+    This is important because "Agentic User Requests" are time-sensitive. Many requests require real-time confirmation, making temporal accuracy a crucial dimension.
+
+4. **Confidence levels**: 
+    Personal AIs may respond with varying confidence. High-confidence correct answers receive a larger positive increment than uncertain correct answers, but wrong high-confidence answers receive larger penalties.
+
+### Initial low scores
+
+If a Personal AI is new or the user has not integrated enough data sources, its initial knowledge coverage is incomplete, leading to a low starting score. To reflect this, the protocol assigns a baseline minimal score, along with potential disclaimers (e.g., “insufficient data”).
+
+Based on its scoring feedback, the God Model generates an individual Personal Data Improvement Plan, which:
+
+- Recommends specific Data Connectors that the user should link to enhance their Personal AI’s knowledge.
+- Provides feedback on potential score improvements, offering transparency on how the AI will evolve.
+
+### Example Calculation
+
+Suppose each data source contributes up to 10 points:
+
+- **Gmail**: Weighted at 2x for message frequency and personal nature.
+- **Social media**: Weighted at 1.5x.
+- **Web3**: Weighted at 2x if the user is highly active; else 1x.
+- **Other**: Weighted at 1x.
+
+Total Score = ∑(Weight_i × (Number_of_correct_responses_i / Number_of_questions_i)) / Normalizing_Factor
+where i spans the categories of questions.
+***
+## Anti-farming and fraud prevention
+
+To ensure Personal AI integrity and prevent manipulation, the protocol implements a multi-layered anti-farming and fraud prevention system. This includes:
+
+- **Verification of data authenticity**: Verifiable data sources (e.g., email logs, blockchain transactions) contribute to a higher trust score, while non-verifiable data has a capped influence on rewards.
+- **KYC-based user validation**: Users must prove they are real individuals to access full benefits. Various KYC levels (e.g., World ID, transaction history, biometric verification) determine reward eligibility and score growth potential.
+- **Random data injection tests**: The God Model introduces synthetic queries to detect if Personal AIs are fabricating or inflating knowledge with false data. Inconsistencies trigger score penalties and potential restrictions.
+- **Cross-verification & source authentication**: Responses from Personal AIs are cross-checked across multiple independent data sources to ensure consistency and accuracy. If a data source is unverified or suspicious, it is quarantined or given lower weight.
+- **Detection of collaborative fraud**: Prevents bot networks from gaming the system by relying on external signals rather than peer interactions. Patterns of coordinated fraudulent activity are logged and penalized.
+- **Penalties for contradictory responses**: If a Personal AI provides conflicting answers to the same question over time, its score is significantly reduced. Repeated contradictions may result in a ban.

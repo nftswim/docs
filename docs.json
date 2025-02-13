@@ -3,80 +3,110 @@
   "theme": "mint",
   "name": "Mint Starter Kit",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#e78bfe",
+    "light": "#e78bfe",
+    "dark": "#e78bfe"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
             "group": "Get Started",
             "pages": [
               "introduction",
               "quickstart",
-              "development"
+              "High-level-view"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Personal AI Protocol",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
+              "personal-ai-protocol/overview",
+              {
+                "group": "Data Connectors",
+                "pages": [
+                  "personal-ai-protocol/What-are-Data-Connectors",
+                  {
+                  "group": "Rewards",
+                  "pages": [
+                    "personal-ai-protocol/Data-Connector-Rewards",
+                    "personal-ai-protocol/Reward-Mechanism"
+                  ]
+                  },
+                  "personal-ai-protocol/Online-Data-Connectors"
+                ]
+                },
+              {
+                "group": "On-Device LLMs",
+                "pages": [
+                  "personal-ai-protocol/What-are-On-Device-LLMs",
+                  "personal-ai-protocol/Personal-Index",
+                  "personal-ai-protocol/On-Device-Models",
+                  "personal-ai-protocol/Pin-AI-App"
+                ]
+              },
+              {
+                "group": "God Models",
+                "pages": [
+                  "personal-ai-protocol/God-Models",
+                  "personal-ai-protocol/Technical-Design",
+                  "personal-ai-protocol/God-Model-Rewards"
+                ]
+              }
             ]
           },
           {
-            "group": "Endpoint Examples",
+            "group": "Concepts",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete"
+              "concepts/Architecture",
+              {
+                "group": "TEE Nodes",
+                "pages": [
+                  "concepts/Overview",
+                  "concepts/Hosting-Data-Connectors",
+                  "concepts/Private-LLM-Inference",
+                  "concepts/Become-a-TEE-Node-Operator",
+                  "concepts/Staking-and-Rewards"
+                ]
+                }
+              ]
+                },
+            {
+            "group": "PIN Economy",
+            "pages": [
+              "pin-economy/Token-Overview",
+              "pin-economy/PIN-Utility"
             ]
-          }
+            }
         ]
       }
     ],
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
+          "anchor": "Research",
           "href": "https://mintlify.com/docs",
           "icon": "book-open-cover"
         },
         {
           "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
+          "href": "https://discord.com/invite/pinai",
+          "icon": "discord"
         },
         {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://www.pinai.io/blog",
           "icon": "newspaper"
         }
       ]
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/DocLogo.png",
+    "dark": "/logo/DocLogo.png"
   },
   "navbar": {
     "links": [

@@ -1,0 +1,26 @@
+---
+title: 'Overview'
+description: 'What are On-Device LLMs?'
+---
+On-device LLMs—Personal AIs—are self-contained language models optimized to run directly on user devices (smartphones, laptops, private clouds, etc.), ensuring that sensitive data remains under user control. Instead of transmitting personal context or raw data to remote servers, these models process information locally. This approach is ideal for tasks like organizing schedules, setting reminders, and managing finances, where privacy is critical. By remaining on-device, Personal AI respects user autonomy and reduces exposure to potentially sensitive information.
+
+## How they work
+On-device LLMs utilize edge inference, leveraging local compute power to perform inference without relying on cloud servers. Within the PIN AI ecosystem, models are downloaded, stored, and managed securely through the PIN AI app, ensuring data remains private and under local control. The process includes the following: 
+- **Storage**: Compressed models are stored on an SSD/HDD or in a private cloud and accessed through the PIN AI app.
+- **Local Processing**: AI computations run directly on the device’s CPU/GPU, keeping sensitive operations local.
+- **Local Personalization**: Learning and model updates occur on-device during downtime, enabling continuous adaptation while maintaining data privacy.
+
+## Key features
+The following key features illustrate how On-Device LLMs protect and serve users. 
+
+### Contextual personalization
+A core component of on-device LLMs is a continuously updated “Personal Index” derived from the user’s daily interactions, history, and preferences. This index might include emails, documents, browsing patterns, purchasing habits, or any other data the user chooses to share. The LLM draws on these data embeddings to generate highly personalized responses, seamlessly adapting to the user’s evolving needs. Over time, the model refines these embeddings, learning unique nuances such as communication style, task priorities, and domain interests.
+
+### Hybrid computing architecture
+Although on-device LLMs carry out sensitive operations locally, they can also leverage cloud-based models or specialized agents for tasks requiring more intensive computation or domain expertise. For example, the local model may handle initial user queries and context retrieval, then securely pass anonymized or restricted data to a remote agent for specialized analysis or generation of complex outputs. The user maintains full control over when and how these external calls occur and which pieces of data (if any) are shared.
+
+### Secure data handling and trusted execution
+On-device LLMs can employ secure hardware enclaves or Trusted Execution Environments (TEEs) to further shield user data. These TEEs isolate memory and compute from the rest of the system, preventing unauthorized access. Combined with robust encryption and secure model-serving techniques, on-device LLMs ensure that even if an attacker gains access to the device, the user’s data and embeddings remain protected.
+
+### Continuous learning and adaptation
+Because the model resides locally, it can be updated or fine-tuned iteratively as the user’s preferences change. As PIN AI app users continuously fetch data and update their Personal Indexes, the on-device model progressively improves. This incremental learning loop allows the Personal AI to refine its internal representations (embeddings) with minimal latency. The result is a continuously adapting personal assistant that grows more adept at handling nuanced tasks, from scheduling and finance tracking to creative work like drafting emails, documents, or creative prompts.

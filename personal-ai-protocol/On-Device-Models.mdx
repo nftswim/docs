@@ -1,0 +1,43 @@
+---
+title: 'On-Device Models'
+---
+
+The following are technical highlights of several models currently accessible through the PIN AI app and used for Personal AI applications within the PIN Network. While each model has its own design goals—such as minimal memory footprint, efficient quantization, or specialized domain training—they all share the common goal of delivering substantial language understanding and generation capabilities in computationally constrained environments.
+
+<div style={{ backgroundColor: '#e0f7fa', padding: '10px', borderRadius: '10px', border: '1px solid #00acc1', display: 'flex', alignItems: 'center' }}>
+    <div style={{ fontWeight: 'bold', fontSize: '20px', marginRight: '10px' }}>ℹ️</div>
+    <div>As AI evolves, we will continuously integrate the latest models to enhance the performance of your Personal AI.</div>
+</div>
+
+## Supported models
+Models currently supported in the PIN Network.
+
+### TinyLlama
+- **Parameter count & architecture**: A scaled-down variant of LLaMA with 500M–1B parameters, retaining transformer architecture with factorized attention.
+- **Quantization & memory footprint**: Packaged in 4-bit or 8-bit quantized versions, allowing operation on consumer-grade GPUs and high-end CPUs with limited VRAM/RAM.
+- **Training data & domain focus**: Trained on curated text including emails, short-form social media, and chat logs, enabling efficient chat-based applications.
+- **Use case scenarios**: Ideal for interactive tasks like text completion, summarization, and personal reminders where latency and memory are critical.
+
+### Gemma-2b
+- **Parameter count & architecture**: 2B-parameter transformer model with a balanced layer count and attention head configuration.
+- **Efficiency techniques**: Uses row-wise quantization and knowledge distillation from larger models for compact, high-performing inference.
+- **Domain adaptation**: Trained on diverse text sources (code repositories, web content) for strong natural language understanding and API interactions.
+- **Scalability & inference**: Designed for mid-range GPUs or CPU-based inference in private data centers, supporting offline and on-premise deployments.
+
+### Phi-3 Mini-3.8b
+- **Parameter count & architecture**: 3.8B-parameter transformer with an optimized feed-forward block and improved attention scaling.
+- **Core improvements**: Employs mixed-precision training and distillation from a 10B+ teacher model for enhanced language pattern recognition.
+- **Context window & personalization**: Supports up to 8K tokens in some variants, making it suitable for document processing and multi-turn dialogues.
+- **On-device feasibility**: 4-bit/8-bit quantization ensures efficient performance on prosumer-grade hardware.
+
+### Qwen2-1.5b
+- **Parameter count & model inheritance**: 1.5B parameters, evolved from the Qwen series with multi-head attention and residual connections.
+- **Training & fine-tuning**: Fine-tuned on domain-specific corpora (e-commerce, short-form social media, user queries) for specialized performance.
+- **Compression & distillation**: Uses multi-stage compression with pruned weights and distilled knowledge from a larger 6B-parameter base.
+- **Memory & speed trade-offs**: Optimized for real-time inference on high-end smartphones and edge servers.
+
+### Llama-3.2-1b
+- **Parameter count & architecture evolution**: 1B-parameter variant of LLaMA 3.x with grouped attention heads for reduced operations.
+- **Context adaptation**: Features dynamic context adaptation that reorders or prunes less relevant tokens in real-time for extended dialogues.
+- **Training data & multilingual support**: Trained with partial multilingual support (English, Spanish, European languages) for international usability.
+- **Target use cases**: Ideal for local text generation, summarization, translation, and personal note-taking on mobile and IoT devices.

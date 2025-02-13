@@ -1,0 +1,28 @@
+The PIN AI App allows users to contribute to the network and earn Personal AI Points by connecting their personal data via various Data Connectors. Actively training and refining Personal AI models further increases point earning potential.
+
+## Base Rewards
+
+Base Rewards provide users with incentives for connecting and updating their data through qualified data connectors.
+
+### First-Time Connection Rewards
+
+Users can receive rewards the first time they connect their data to the PIN AI app.
+
+- **Total Allocation:** 10M tokens.
+- **Requirement:** To mitigate spam, PIN AI only accepts the email accounts with at least X days of history and Y number of emails.
+- **Scoring System:**
+    - The first email per wallet contributes 1 point.
+    - Subsequent emails reduce in weight: 0.5 for the second, 0.25 for the third, etc.
+- **Decay Rate:** Rewards decay by 50% every three cycles. This means once the total score reaches 450K, the reward per contribution is halved.
+
+### Updating Rewards
+
+Users can earn rewards by routinely updating their data.
+
+- **Total Allocation:** 40M tokens.
+- **Requirement:** To mitigate spam, PIN AI only accepts the email accounts that have at least Z number of new emails from last time this wallet address calls the email data connector.
+- **Contribution Frequency:** Each email address can contribute once per week.
+- **Scoring System:**
+    - The first weekly email contributes 1 point.
+    - Subsequent weekly emails reduce in weight: 0.5 for the second, 0.25 for the third, etc.
+- **Decay Rate:** For every 3.75 million cumulative scores, the reward per score is reduced by half.
