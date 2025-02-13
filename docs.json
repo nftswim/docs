@@ -73,10 +73,11 @@
             ]
           },
           {
-            "group": "PIN Economy",
+            "group": "PIN Ecosystem",
             "pages": [
-              "pin-economy/Token-Overview",
-              "pin-economy/PIN-Utility"
+              "PIN-economy2/Token-Overview",
+              "PIN-economy2/PIN-Utility",
+              "PIN Economy/Green"
             ]
           }
         ]
