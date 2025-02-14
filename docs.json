@@ -14,11 +14,13 @@
       "anchors": [
         {
           "anchor": "Discord",
-          "href": "https://discord.com/invite/pinai"
+          "href": "https://discord.com/invite/pinai",
+          "icon": "discord"
         },
         {
-          "anchor": "Telegram",
-          "href": "https://t.me/pinai_community"
+          "anchor": "Blog",
+          "href": "https://www.pinai.io/blog",
+          "icon": "blog"
         },
         {
           "anchor": "Contact us",
