@@ -77,6 +77,17 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Community",
+        "groups": [
+          {
+            "group": "Community",
+            "pages": [
+              "Community"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -89,10 +100,6 @@
       {
         "label": "Blog",
         "href": "https://www.pinai.io/blog"
-      },
-      {
-        "label": "Community",
-        "href": "https://discord.com/invite/pinai"
       }
     ],
     "primary": {
