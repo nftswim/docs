@@ -88,11 +88,15 @@
       {
         "label": "Blog",
         "href": "https://www.pinai.io/blog"
+      },
+      {
+        "label": "Community",
+        "href": "https://discord.com/invite/pinai"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "PIN AI.IO",
+      "label": "pinai.io",
       "href": "https://www.pinai.io/"
     }
   },
