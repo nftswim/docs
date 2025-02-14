@@ -20,11 +20,7 @@
         {
           "anchor": "Blog",
           "href": "https://www.pinai.io/blog",
-          "icon": "blog"
-        },
-        {
-          "anchor": "Contact us",
-          "href": "https://www.pinai.io/contact"
+          "icon": "newspaper"
         }
       ]
     },
