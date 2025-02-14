@@ -10,6 +10,22 @@
   },
   "favicon": "/LOGO-thick 2.png",
   "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Discord",
+          "href": "https://discord.com/invite/pinai",
+        },
+        {
+          "anchor": "Telegram",
+          "href": "https://t.me/pinai_community",
+        },
+        {
+          "anchor": "Contact us",
+          "href": "https://www.pinai.io/contact",
+        }
+      ]
+    },
     "tabs": [
       {
         "tab": "Documentation",
