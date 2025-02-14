@@ -36,7 +36,7 @@ This process ensures that tasks executed by a Trusted Execution Environment (TEE
 
 ![TEE Diagram](../../images/tee-diagram.png)
 
-## Proof commit phase
+### Proof commit phase
 
 The TEE node formally submits its proof to the TEE Governance contract.
 
@@ -47,7 +47,7 @@ The TEE node formally submits its proof to the TEE Governance contract.
 - **emit ProofSubmitted**: TEE Governance emits an event indicating that the proof has been submitted.
 - **Return Success**: The process for proof submission is completed successfully.
 
-## Task validation phase
+### Task validation phase
 
 The TEE Governance contract triggers the validation process.
 
@@ -58,7 +58,7 @@ The TEE Governance contract triggers the validation process.
 - **emit TaskValidated**: The Validator emits an event indicating that the task has been validated successfully.
 - **Return Result**: The result of the task validation is returned.
 
-## Penalty execution phase
+### Penalty execution phase
 
 This phase is triggered if task validation fails.
 
