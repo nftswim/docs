@@ -113,10 +113,7 @@
   "metatags": {
     "og:description": "The official PIN AI documentation. Covering the PIN (Personalized Intelligence Network) Network. Learn how PIN AI enables truly personal AI through secure, on-device LLMs, TEE security, blockchain verification, and an agent services marketplace.",
     "og:image": "https://static.wixstatic.com/media/a011bf_5b2aa64474634e5a8bdd6abdd08644a5~mv2.png/v1/fit/w_2500,h_1330,al_c/a011bf_5b2aa64474634e5a8bdd6abdd08644a5~mv2.png",
-    "twitter:title": "PIN AI Documentation",
-    "twitter:description": "The official PIN AI documentation. Covering the PIN (Personalized Intelligence Network) Network. Learn how PIN AI enables truly personal AI through secure, on-device LLMs, TEE security, blockchain verification, and an agent services marketplace.",
-    "twitter:image": "https://static.wixstatic.com/media/a011bf_5b2aa64474634e5a8bdd6abdd08644a5~mv2.png/v1/fit/w_2500,h_1330,al_c/a011bf_5b2aa64474634e5a8bdd6abdd08644a5~mv2.png",
-    "twitter:site": "@pinai_network"
+    "twitter:image": "https://static.wixstatic.com/media/a011bf_5b2aa64474634e5a8bdd6abdd08644a5~mv2.png/v1/fit/w_2500,h_1330,al_c/a011bf_5b2aa64474634e5a8bdd6abdd08644a5~mv2.png"
   }
 }
 }
