@@ -117,8 +117,8 @@
   "navbar": {
     "links": [
       {
-        "label": "Blog",
-        "href": "https://www.pinai.io/blog"
+        "label": "Contact",
+        "href": "https://www.pinai.io/contact"
       }
     ],
     "primary": {
