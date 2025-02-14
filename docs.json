@@ -111,7 +111,7 @@
   "seo": {
     "metatags": {
       "og:description": "The official PIN AI documentation. Covering the PIN (Personalized Intelligence Network) Network. Learn how PIN AI enables truly personal AI through secure, on-device LLMs, TEE security, blockchain verification, and an agent services marketplace.",
-      "og:image": "/logo/logo-svg.svg"
+      "og:image": "/images/metadataphoto.jpg"
     }
   }
 }
