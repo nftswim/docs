@@ -18,6 +18,16 @@
           "icon": "discord"
         },
         {
+          "anchor": "Telegram",
+          "href": "https://t.me/thePINAI",
+          "icon": "telegram"
+        },
+        {
+          "anchor": "X",
+          "href": "https://x.com/PINAI_IO",
+          "icon": "x"
+        },
+        {
           "anchor": "Blog",
           "href": "https://www.pinai.io/blog",
           "icon": "newspaper"
