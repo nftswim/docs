@@ -25,32 +25,32 @@
             "pages": [
               "personal-ai-protocol/overview",
               {
-          "group": "Data Connectors",
-          "pages": [
-            "personal-ai-protocol/Data-Connectors",
-            {
-              "group": "Rewards",
-              "pages": [
-                "personal-ai-protocol/Data-Connector-Rewards",
-                "personal-ai-protocol/Reward-Mechanism"
-              ]
-            },
-            "personal-ai-protocol/Online-Data-Connectors"
-          ]
+                "group": "Data Connectors",
+                "pages": [
+                  "personal-ai-protocol/Data-Connectors",
+                  {
+                    "group": "Rewards",
+                    "pages": [
+                      "personal-ai-protocol/Data-Connector-Rewards",
+                      "personal-ai-protocol/Reward-Mechanism"
+                    ]
+                  },
+                  "personal-ai-protocol/Online-Data-Connectors"
+                ]
               },
               {
-          "group": "On-Device LLMs",
-            "pages": [
-            "personal-ai-protocol/What-are-On-Device-LLMs",
-            "personal-ai-protocol/Personal-Index",
-            "personal-ai-protocol/On-Device-Models"
-          ]
+                "group": "On-Device LLMs",
+                "pages": [
+                  "personal-ai-protocol/What-are-On-Device-LLMs",
+                  "personal-ai-protocol/Personal-Index",
+                  "personal-ai-protocol/On-Device-Models"
+                ]
               },
               {
-            "group": "God Models",
-            "pages": [
-            "personal-ai-protocol/God-Models"
-          ]
+                "group": "God Models",
+                "pages": [
+                  "personal-ai-protocol/God-Models"
+                ]
               }
             ]
           },
@@ -59,13 +59,13 @@
             "pages": [
               "Infrastructure/Architecture2",
               {
-          "group": "TEE Nodes",
-          "pages": [
-            "TEE2",
-            "Infrastructure/Hosting-Data-Connectors",
-            "Infrastructure/Private-LLM-Inference",
-            "Infrastructure/Staking-and-Rewards"
-          ]
+                "group": "TEE Nodes",
+                "pages": [
+                  "TEE2",
+                  "Infrastructure/Hosting-Data-Connectors",
+                  "Infrastructure/Private-LLM-Inference",
+                  "Infrastructure/Staking-and-Rewards"
+                ]
               }
             ]
           },
@@ -102,6 +102,12 @@
       "telegram": "https://t.me/thePINAI",
       "discord": "https://discord.com/invite/pinai",
       "linkedin": "https://www.linkedin.com/company/pin-ai/"
+    }
+  },
+  "seo": {
+    "metatags": {
+      "og:description": "The official PIN AI documentation. Covering the PIN (Personalized Intelligence Network) Network. Learn how PIN AI enables truly personal AI through secure, on-device LLMs, TEE security, blockchain verification, and an agent services marketplace.",
+      "og:image": "/logo/logo-svg.svg"
     }
   }
 }
