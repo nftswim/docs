@@ -61,7 +61,7 @@
               {
                 "group": "TEE Nodes",
                 "pages": [
-                  "TEE2",
+                  "TEE-Nodes",
                   "Infrastructure/Hosting-Data-Connectors",
                   "Infrastructure/Private-LLM-Inference",
                   "Infrastructure/Staking-and-Rewards"
