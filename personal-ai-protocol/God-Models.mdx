@@ -19,51 +19,73 @@ This section outlines how God Models evaluate and refine Personal AI performance
 
 <img src="/images/Doc-God Model3.png" alt="God Model Diagram" style={{ display: 'block', margin: '0 auto', maxWidth: '100%' }} />
 
-### Initialization
-
-1. When a Personal AI is deployed locally on the user’s device and registered in the PIN AI Network, including:
-
-    - Verified data sources (Gmail, social media, e-commerce, crypto wallets, etc.).
-    - Interaction history and past responses.
-    - Activity patterns and behavioral trends.
-
+<Steps>
+  <Step title="Initialization">
+    When a Personal AI is deployed locally on the user’s device and registered in the PIN AI Network, including:
+    <ul>
+      <li>Verified data sources (Gmail, social media, e-commerce, crypto wallets, etc.).</li>
+      <li>Interaction history and past responses.</li>
+      <li>Activity patterns and behavioral trends.</li>
+    </ul>
     The God Model is made aware of which data sources are active for each user.
+  </Step>
 
-### Periodic or randomized queries
+  <Step title="Periodic or Randomized Queries">
+    The God Model assesses how effectively the Personal AI delivers user-specific contextual information to an external Personal AI Agent, enabling it to accurately fulfill the user’s request. Queries fall into three main categories:
+    <ul>
+      <li>
+        <strong>Web 2.0-type user request</strong>: Validating knowledge about social media, emails, calendar events, and online purchases.
+      </li>
+      <li>
+        <strong>Web3-type user request</strong>: Evaluating transaction history, on-chain interactions, and token ownership.
+      </li>
+      <li>
+        <strong>Native AI agent-type user request</strong>: Assessing AI understanding of lifestyle behaviors, health data, and IoT device interactions.
+      </li>
+    </ul>
+  </Step>
 
-2. The God Model assesses how effectively the Personal AI delivers user-specific contextual information to an external Personal AI Agent, enabling it to accurately fulfill the user’s request. Queries fall into three main categories:
+  <Step title="Response Verification">
+    The Personal AI responds to queries referencing user data. The God Model checks the response against verified data logs or previously stored state (where possible) to assess how effectively the Personal AI delivers user-specific contextual information to an external Personal AI Agent.
+  </Step>
 
-    - **Web 2.0-type user request**: Validating knowledge about social media, emails, calendar events, and online purchases.
-    - **Web3-type user request**: Evaluating transaction history, on-chain interactions, and token ownership.
-    - **Native AI agent-type user request**: Assessing AI understanding of lifestyle behaviors, health data, and IoT device interactions.
+  <Step title="Score Adjustment">
+    The God Model assigns the Personal AI a "knowledge score" based on its responses.
+    <ul>
+      <li>
+        If the Personal AI's contextual information is sufficient for an external, to-be-built AI Agent to fulfill the user’s request, the score for that Personal AI is nudged upward.
+      </li>
+      <li>
+        If the Personal AI's contextual information is insufficient for an external, to-be-built AI Agent to fulfill the user’s request, the score is penalized.
+      </li>
+      <li>
+        If the Personal AI's contextual information is uncertain or partial and does not fully enable an external, to-be-built AI Agent to fulfill the user’s request, it may result in a neutral or slightly positive/negative adjustment depending on design.
+      </li>
+    </ul>
+  </Step>
+</Steps>
 
-### Response verification
-
-3. The Personal AI responds to queries referencing user data. The God Model checks the response against verified data logs or previously stored state (where possible) to assess how effectively the Personal AI delivers user-specific contextual information to an external Personal AI Agent.
-
-### Score adjustment
-
-4. The God Model assigns the Personal AI a "knowledge score" based on its responses.
-
-    - If the Personal AI's contextual information is sufficient for an external, to-be-built AI Agent to fulfill the user’s request, the score for that Personal AI is nudged upward.
-    - If the Personal AI's contextual information is insufficient for an external, to-be-built AI Agent to fulfill the user’s request, the score is penalized.
-    - If the Personal AI's contextual information is uncertain or partial and does not fully enable an external, to-be-built AI Agent to fulfill the user’s request, it may result in a neutral or slightly positive/negative adjustment depending on design.
-***
 ## Scoring function
 
 The scoring function reflects how effectively the Personal AI delivers user-specific contextual information to an external Personal AI Agent, enabling it to accurately fulfill the user’s request. It is based on the following parameters:
 
-1. **Agentic user request coverage**: 
+<Steps>
+  <Step title="Agentic User Request Coverage">
     The overall score is aggregated, weighting sources by importance or frequency of Agentic User Requests.
-
-2. **Consistency**: 
-    Cross-referencing data from multiple sources (e.g., does the travel booking date match the email confirmation date?)
-
-3. **Temporal accuracy**: 
+  </Step>
+  
+  <Step title="Consistency">
+    Cross-referencing data from multiple sources (e.g., does the travel booking date match the email confirmation date?).
+  </Step>
+  
+  <Step title="Temporal Accuracy">
     This is important because "Agentic User Requests" are time-sensitive. Many requests require real-time confirmation, making temporal accuracy a crucial dimension.
-
-4. **Confidence levels**: 
+  </Step>
+  
+  <Step title="Confidence Levels">
     Personal AIs may respond with varying confidence. High-confidence correct answers receive a larger positive increment than uncertain correct answers, but wrong high-confidence answers receive larger penalties.
+  </Step>
+</Steps>
 
 ### Initial low scores
 

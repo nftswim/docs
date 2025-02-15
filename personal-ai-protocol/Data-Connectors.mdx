@@ -14,33 +14,37 @@ Connectors provide the following services:
 
 Users select Data Connectors to collect and preprocess their data so that it is readily accessible to their Personal AI. The process consists of the following steps:
 
-### Data collection
-
-1. Connectors securely fetch and process user data from authorized sources (e.g., social media, Web3 wallets, shopping apps), ensuring privacy and preventing unauthorized access.
-
-    - Verified data sources (Gmail, social media, e-commerce, crypto wallets, etc.).
-    - Interaction history and past responses.
-    - Activity patterns and behavioral trends.
-
-### Preprocessing
-
-2. Retrieved data is cleaned, formatted, and structured into a graph, optimizing it for efficient retrieval and AI processing.
-
-### Onchain verification
-
-3. Connectors ensure the integrity and authenticity of operations performed within TEE nodes by submitting a hardware-generated attestation report to the PIN Onchain Protocol. These reports confirm that:
-
-    - The TEE node has completed the assigned task.
-    - The code running inside the TEE is the version certified by the Personal AI Protocol, ensuring no alterations to the software or environment.
-
+<Steps>
+  <Step title="Data Collection">
+    Connectors securely fetch and process user data from authorized sources (e.g., social media, Web3 wallets, shopping apps), ensuring privacy and preventing unauthorized access.
+    <ul>
+      <li>Verified data sources (Gmail, social media, e-commerce, crypto wallets, etc.).</li>
+      <li>Interaction history and past responses.</li>
+      <li>Activity patterns and behavioral trends.</li>
+    </ul>
+  </Step>
+  
+  <Step title="Preprocessing">
+    Retrieved data is cleaned, formatted, and structured into a graph, optimizing it for efficient retrieval and AI processing.
+  </Step>
+  
+  <Step title="Onchain Verification">
+    Connectors ensure the integrity and authenticity of operations performed within TEE nodes by submitting a hardware-generated attestation report to the PIN Onchain Protocol. These reports confirm that:
+    <ul>
+      <li>The TEE node has completed the assigned task.</li>
+      <li>The code running inside the TEE is the version certified by the Personal AI Protocol, ensuring no alterations to the software or environment.</li>
+    </ul>
     These attestation reports are submitted to the PIN Onchain Protocol for verification, ensuring that:
-
-    - The TEE environment operates as intended and securely processes personal data.
-    - The integrity of the software and Data Connectors' operations is maintained without exposing sensitive user information.
-
-### Storage
-
-4. After verification, preprocessed data is securely stored in a user-designated trusted storage space. This storage could be the user’s local devices or private cloud. This ensures privacy, local control, and direct accessibility for Personal AI.
+    <ul>
+      <li>The TEE environment operates as intended and securely processes personal data.</li>
+      <li>The integrity of the software and Data Connectors' operations is maintained without exposing sensitive user information.</li>
+    </ul>
+  </Step>
+  
+  <Step title="Storage">
+    After verification, preprocessed data is securely stored in a user-designated trusted storage space. This storage could be the user’s local devices or private cloud. This ensures privacy, local control, and direct accessibility for Personal AI.
+  </Step>
+</Steps>
 
 ## Important features
 
