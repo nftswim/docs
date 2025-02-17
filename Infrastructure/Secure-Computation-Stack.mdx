@@ -1,0 +1,99 @@
+---
+title: 'Secure Computation Stack'
+---
+
+The PIN AI system utilizes a secure computation stack to facilitate privacy-preserving computation within Trusted Execution Environments (TEEs). This stack enables Personal AI and AI Agents to process sensitive user data without exposing it, ensuring that computations remain verifiable, decentralized, and resistant to manipulation.
+
+By integrating TEE-backed execution with blockchain-based validation, PIN AI enables:
+
+- Confidential AI computation with on-chain verifiability.
+- Efficient task execution and resource allocation through a decentralized scheduler.
+- A transparent governance model that rewards honest computation and penalizes malicious behavior.
+
+The stack consists of four layers: Client Layer, Chain Governance Layer, Scheduler Layer, and TEE Node Layer. 
+
+<div style={{ textAlign: 'center', margin: '20px 0' }}>
+    <img src="/images/securecomputation.png" alt="Personal AI Protocol Overview" style={{ maxWidth: '100%', height: 'auto' }} />
+</div>
+
+### Client Layer
+The Client Layer handles user authentication, data submission, and data retrieval, ensuring a seamless and secure user experience.
+
+- Supports OAuth-based authentication for user verification.
+- Encrypts data before transmission to protect user privacy.
+- Allows users to retrieve processed data securely.
+
+### Chain Governance Layer
+The Chain Governance Layer maintains on-chain transparency and security, ensuring trust in the execution and validation of tasks.
+
+- Manages on-chain user and node registration, verifying credentials and permissions.
+- Handles staking mechanisms for securing network participation.
+- Verifies TEE computation proofs to ensure execution integrity.
+- Distributes rewards to users and nodes based on task completion.
+
+### Scheduler Layer
+The Scheduler Layer is responsible for task distribution, workload balancing, and security monitoring to optimize computational efficiency.
+
+- Distributes computational tasks to available TEE nodes.
+- Balances workload across nodes to maximize efficiency.
+- Monitors node performance and security to detect anomalies.
+- Verifies data integrity before processing and finalizing computation results.
+
+### TEE Node Layer
+TEE Nodes execute confidential computing tasks in a trusted and verifiable environment.
+
+- Initializes and connects secure TEE environments.
+- Executes assigned computations while ensuring data privacy.
+- Generates cryptographic proofs for task verification and auditability.
+
+## System workflow
+The following outlines how PIN AI processes and verifies computational tasks in a secure and decentralized manner.
+
+<Steps>
+    <Step title="User Authentication & Data Submission (Client Layer)">
+        Users authenticate via OAuth and securely submit encrypted data for processing.
+    </Step>
+    <Step title="Task Verification & Distribution (Scheduler Layer)">
+        The Scheduler Layer verifies data integrity, ensuring it meets computational requirements.
+        Verified tasks are assigned to TEE Nodes based on workload distribution.
+    </Step>
+    <Step title="Secure Computation & Proof Generation (TEE Nodes)">
+        TEE Nodes process tasks in an isolated execution environment, maintaining privacy.
+        Each completed task produces a cryptographic proof of execution to verify correctness.
+    </Step>
+    <Step title="Validation & Reward Distribution (Chain Governance Layer)">
+        Chain Governance verifies the proofs to confirm task completion and correctness.
+        Upon successful validation, rewards are distributed to contributing nodes and users.
+        Nodes that fail validation incur penalties, ensuring network integrity and fairness.
+    </Step>
+</Steps>
+
+```go
+// Main workflow example
+// Demonstrates complete data processing pipeline
+func ExampleWorkflow() {
+    // 1. User Registration and Authorization
+    client.Register(userInfo)
+    authToken := client.Authorize(oauthProvider)
+    
+    // 2. Node Registration and Staking
+    node.Register(nodeInfo)
+    node.Stake(stakeAmount)
+    
+    // 3. Data Submission and Processing
+    data := prepareData()
+    scheduler.VerifyData(data)
+    task := scheduler.GenerateTask(data)
+    
+    // 4. Task Distribution and Execution
+    scheduler.DispatchTask(task)
+    scheduler.BalanceLoad(availableNodes)
+    
+    // 5. TEE Processing
+    result := teeNode.ExecuteTask(task)
+    proof := teeNode.GenerateProof(result)
+    
+    // 6. Result Verification and Rewards
+    scheduler.VerifyResult(result)
+    chain.VerifyTask(proof)
+    ```

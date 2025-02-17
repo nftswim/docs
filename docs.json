@@ -71,6 +71,7 @@
             "group": "Infrastructure",
             "pages": [
               "Infrastructure/Architecture-Overview",
+              "Infrastructure/Secure-Computation-Stack",
               {
                 "group": "TEE Nodes",
                 "pages": [
