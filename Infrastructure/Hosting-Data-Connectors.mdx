@@ -1,4 +1,4 @@
-TEE Node Operators host and provide confidential compute for Data Connectors, enabling secure data retrieval and processing while preserving user privacy. By leveraging Trusted Execution Environments (TEEs), these operators ensure that sensitive data remains confidential.
+TEE Node Operators host and provide confidential compute for Data Connectors, enabling secure data retrieval and processing while preserving user privacy.
 
 ## Core functions
 
@@ -12,33 +12,31 @@ These functions ensure that sensitive data remains protected throughout its life
 
 The following components enable secure data ingestion, processing, and privacy protection within the TEE environment:
 
-### Data ingestion layer
+<Steps>
+    <Step title="Data ingestion layer">
+        Manages the secure retrieval of external data while ensuring authenticity, integrity, and controlled access.
 
-Manages the secure retrieval of external data while ensuring authenticity, integrity, and controlled access.
+        - **Encrypted Data Transport**: Utilizes TLS, end-to-end encryption, and cryptographic signatures to prevent data leaks.
+        - **Source Authentication**: Verifies data provenance to prevent unauthorized sources from injecting malicious data.
+        - **Rate Limiting & Quota Management**: Ensures controlled data access to prevent abuse and maintain system efficiency.
+    </Step>
+    <Step title="Processing pipeline">
+        Handles data transformation and secure computation within the enclave to maintain confidentiality.
 
-- **Encrypted Data Transport**: Utilizes TLS, end-to-end encryption, and cryptographic signatures to prevent data leaks.
-- **Source Authentication**: Verifies data provenance to prevent unauthorized sources from injecting malicious data.
-- **Rate Limiting & Quota Management**: Ensures controlled data access to prevent abuse and maintain system efficiency.
+        - **Data validation & sanitization**: Filters and normalizes incoming data to prevent injection attacks.
+        - **Format conversion & normalization**: Converts data into a standardized format for secure processing.
+        - **TEE-Based secure computation**: Executes privacy-preserving algorithms within the enclave.
+    </Step>
+    <Step title="Privacy protection measures">
+        Implements security mechanisms to minimize data exposure and enforce privacy features.
 
-### Processing pipeline
+        - **Data minimization**: Limits the amount of data stored or processed.
+        - **Attribute-based encryption (ABE)**: Restricts access based on predefined policies.
+        - **Secure multi-party computation (MPC) Support**: Enables privacy-preserving collaboration without revealing raw data.
+    </Step>
+</Steps>
 
-Handles data transformation and secure computation within the enclave to maintain confidentiality:
-
-- **Data validation & sanitization**: Filters and normalizes incoming data to prevent injection attacks.
-- **Format conversion & normalization**: Converts data into a standardized format for secure processing.
-- **TEE-Based secure computation**: Executes privacy-preserving algorithms within the enclave.
-
-### Privacy protection measures
-
-Implements security mechanisms to minimize data exposure and enforce privacy features:
-
-- **Data minimization**: Limits the amount of data stored or processed.
-- **Attribute-based encryption (ABE)**: Restricts access based on predefined policies.
-- **Secure multi-party computation (MPC) Support**: Enables privacy-preserving collaboration without revealing raw data.
-
-## Code snippet
-
-The following Go structs define the TEE-based Data Connector architecture, ensuring secure data retrieval, processing, and privacy enforcement.
+*The following Go structs define the TEE-based Data Connector architecture, ensuring secure data retrieval, processing, and privacy enforcement.*
 
 ```go
 type DataConnector struct {
