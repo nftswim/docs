@@ -19,7 +19,7 @@
         },
         {
           "anchor": "Telegram",
-          "href": "https://t.me/thePINAI",
+          "href": "https://t.me/pinai_community",
           "icon": "telegram"
         },
         {
@@ -124,7 +124,7 @@
   "footer": {
     "socials": {
       "x": "https://x.com/PINAI_IO",
-      "telegram": "https://t.me/thePINAI",
+      "telegram": "https://t.me/pinai_community",
       "discord": "https://discord.com/invite/pinai",
       "linkedin": "https://www.linkedin.com/company/pin-ai/"
     }
