@@ -45,17 +45,10 @@
             "pages": [
               "personal-ai-protocol/Overview",
               {
-                "group": "Data Connectors",
-                "pages": [
-                  "personal-ai-protocol/Data-Connectors",
-                  {
-                    "group": "Rewards",
-                    "pages": [
-                      "personal-ai-protocol/Data-Connector-Rewards",
-                      "personal-ai-protocol/Reward-Mechanism"
-                    ]
-                  },
-                  "personal-ai-protocol/Online-Data-Connectors"
+              "group": "Data Connectors",
+              "pages": [
+                "personal-ai-protocol/Data-Connectors",
+                "personal-ai-protocol/Online-Data-Connectors"
                 ]
               },
               {
@@ -123,7 +116,7 @@
     ],
     "primary": {
       "type": "button",
-      "label": "pinai.io",
+      "label": "Go to pinai.io",
       "href": "https://www.pinai.io/"
     }
   },

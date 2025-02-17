@@ -1,7 +1,7 @@
 ---
 title: 'What are God Models?'
 ---
-God Models are specialized validation models deployed within Trusted Execution Environments (TEEs) across the PIN AI Network. They serve as an oversight layer (hence "God"), continuously evaluating the performance of Personal AIs to ensure accuracy, consistency, and alignment with user data.
+Guardain of data (God) Models are specialized validation models deployed within Trusted Execution Environments (TEEs) across the PIN AI Network. They serve as an oversight layer (hence "God"), continuously evaluating the performance of Personal AIs to ensure accuracy, consistency, and alignment with user data.
 
 God Models perform the following functions:
 
@@ -10,7 +10,7 @@ God Models perform the following functions:
 - Establish the foundation for a robust Agent Ecosystem by ensuring users continuously refine their Personal AI.
 - Detect and penalize data manipulation, adversarial behaviors, and synthetic data injection, ensuring Personal AI integrity.
 
-<Info>God stands for "Guardian of Data." The interactions between your Personal AI and our God Models are known only to you and the model.</Info>
+<Info>Interactions between your Personal AI and our God Models remain private—accessible only to you and the respective God Model.</Info>
 
 ***
 ## Evaluation framework
@@ -21,7 +21,7 @@ This section outlines how God Models evaluate and refine Personal AI performance
 
 <Steps>
   <Step title="Initialization">
-    When a Personal AI is deployed locally on the user’s device and registered in the PIN AI Network, including:
+    When a Personal AI is deployed locally on the user’s device and registered in the PIN Network, it records basic metadata, including:
     <ul>
       <li>Verified data sources (Gmail, social media, e-commerce, crypto wallets, etc.).</li>
       <li>Interaction history and past responses.</li>
@@ -46,20 +46,21 @@ This section outlines how God Models evaluate and refine Personal AI performance
   </Step>
 
   <Step title="Response verification">
-    The Personal AI responds to queries referencing user data. The God Model checks the response against verified data logs or previously stored state (where possible) to assess how effectively the Personal AI delivers user-specific contextual information to an external Personal AI Agent.
+    The Personal AI responds to queries referencing user data. The God Model checks the response against verified data logs or a previously stored state (where possible) to assess how effectively the Personal AI delivers user-specific contextual information to an external AI Agent.
   </Step>
 
   <Step title="Score adjustment">
     The God Model assigns the Personal AI a "knowledge score" based on its responses.
     <ul>
       <li>
-        If the Personal AI's contextual information is sufficient for an external, to-be-built AI Agent to fulfill the user’s request, the score for that Personal AI is nudged upward.
+        If the response is consistent and corroborated, the score for that Personal AI is nudged upward.
       </li>
       <li>
-        If the Personal AI's contextual information is insufficient for an external, to-be-built AI Agent to fulfill the user’s request, the score is penalized.
+        If the response is inconsistent or contradictory, the score is penalized.
       </li>
       <li>
-        If the Personal AI's contextual information is uncertain or partial and does not fully enable an external, to-be-built AI Agent to fulfill the user’s request, it may result in a neutral or slightly positive/negative adjustment depending on design.
+        Uncertainty or partial answers may result in a neutral or slightly positive/negative adjustment depending on design.
+
       </li>
     </ul>
   </Step>

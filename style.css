@@ -1,0 +1,7 @@
+/* style.css */
+
+/* Override the navbar logo size */
+#navbar a img {
+    height: 2.25rem !important;
+  }
+  

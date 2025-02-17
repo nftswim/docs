@@ -1,52 +1,48 @@
 ---
 title: 'What are Data Connectors?'
 ---
-Data Connectors are software components that fetch and organize user data from external sources into a structured format that on-device LLMs can utilize for Personal AI and agent services. They are hosted by a decentralized network of TEE Node Operators and are accessible to users via the PIN AI app.
+Data Connectors are software components that fetch and organize user data from external sources into a structured format for on-device LLMs to use in Personal AI and agent services. They are hosted by a decentralized network of TEE Node Operators and are accessible via the PIN AI app.
 
-Connectors provide the following services:
-- Secure data collection from sources like social media, email, Web3 wallets, and shopping apps.
-- Private data preprocessing within Trusted Execution Environments (TEEs).
-- Cryptographic attestation of data preprocessing, verified by the PIN Onchain Protocol.
+### Data Connectors provide
+
+- Secure and private data collection and processing within Trusted Execution Environments (TEEs).
+- Verifiable proofs of secure data handling and processing.
 
 ![Data Connector Diagram](../images/Doc-Data-connector.png)
 
-## How they work
+## How do they work?
 
-Users select Data Connectors to collect and preprocess their data so that it is readily accessible to their Personal AI. The process consists of the following steps:
+PIN AI app users choose the data they want Data Connectors to gather and securely store in their trusted location. The process consists of the following steps:
 
 <Steps>
-  <Step title="Data Collection">
-    Connectors securely fetch and process user data from authorized sources (e.g., social media, Web3 wallets, shopping apps), ensuring privacy and preventing unauthorized access.
+  <Step title="Data collection">
+    The connector establishes a secure connection to the data source. The user grants permission for the connector to access their data. 
+    - Once authorized, the connector uses API calls (requests) with the appropriate API key or access token to fetch the specific data the user has authorized it to access.
     <ul>
-      <li>Verified data sources (Gmail, social media, e-commerce, crypto wallets, etc.).</li>
-      <li>Interaction history and past responses.</li>
-      <li>Activity patterns and behavioral trends.</li>
     </ul>
   </Step>
   
-  <Step title="Preprocessing">
-    Retrieved data is cleaned, formatted, and structured into a graph, optimizing it for efficient retrieval and AI processing.
+  <Step title="Processing">
+    Connectors clean, format, and structure retrieved data into a personal index (<Tooltip tip="A knowledge graph is a structured representation of data that shows the relationships between different entities.">knowledge graph</Tooltip>), optimizing it for Personal AI.
   </Step>
   
-  <Step title="Onchain Verification">
-    Connectors ensure the integrity and authenticity of operations performed within TEE nodes by submitting a hardware-generated attestation report to the PIN Onchain Protocol. These reports confirm that:
+  <Step title="Onchain verification">
+   Connectors submit hardware-generated attestation reports to the PIN Onchain Protocol, providing verifiable proof of secure data handling and processing within TEE nodes. These reports confirm that:
     <ul>
       <li>The TEE node has completed the assigned task.</li>
       <li>The code running inside the TEE is the version certified by the Personal AI Protocol, ensuring no alterations to the software or environment.</li>
     </ul>
-    These attestation reports are submitted to the PIN Onchain Protocol for verification, ensuring that:
+    The onchain verification process guarantees the integrity of TEE operations.
     <ul>
-      <li>The TEE environment operates as intended and securely processes personal data.</li>
-      <li>The integrity of the software and Data Connectors' operations is maintained without exposing sensitive user information.</li>
     </ul>
   </Step>
   
   <Step title="Storage">
-    After verification, preprocessed data is securely stored in a user-designated trusted storage space. This storage could be the user’s local devices or private cloud. This ensures privacy, local control, and direct accessibility for Personal AI.
+    After verification, processed data is securely stored in the user’s chosen trusted location—for example, their local device, a personal cloud storage account, or a dedicated secure storage solution. This gives users control over their data, ensuring privacy and direct access for their Personal AI.
   </Step>
 </Steps>
 
-## Important features
+## Key features
 
 - **Privacy-preserving data handling:**
 All data fetching and processing occur exclusively within a TEE node, unless otherwise authorized by the user. This prevents unauthorized access or data leakage.

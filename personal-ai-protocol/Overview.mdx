@@ -4,46 +4,43 @@ title: "Overview"
 
 The Personal AI Protocol is an open-source, decentralized framework that combines cryptographic security with off-chain private computation to enable secure, verifiable, and privacy-preserving data handling. It empowers you to unlock your data from various Web2 and Web3 platforms and leverage it with your own Personal AI.
 
-The protocol consists of three core components:
-- **Data Connectors**: Decentralized modules that securely fetch and preprocess personal data from Web2 and Web3 sources within Trusted Execution Environments (TEEs).
-- **On-Device LLMs (Personal AI)**: On-device extract contextual data and help users coordinate external AI Agent Services.
-- **God Models**: Specialized validation models deployed within TEEs that continuously evaluate Personal AI performance for accuracy, consistency, and data alignment.
+The protocol consists of three core components: **Data Connectors**, **On-Device LLMs**, and **God Models.** 
 <div style={{ textAlign: 'center', margin: '20px 0' }}>
     <img src="/images/Doc-Personal-AI-Protocol.png" alt="Personal AI Protocol Overview" style={{ maxWidth: '100%', height: 'auto' }} />
 </div>
 
+
 ## Data Connectors
 
-Data Connectors are software components that securely fetch, process, and structure personal data within Trusted Execution Environments (TEEs). They enable you to connect to and retrieve information from major Web2 and Web3 platforms, such as Google, Apple, Meta, Amazon, and MetaMask, while ensuring data privacy and user control.
+Data Connectors are software components that securely fetch, process, and structure personal data within Trusted Execution Environments (TEEs). They enable you to connect to and retrieve information from major Web2 and Web3 platforms, such as Google, Apple, Meta, Amazon, MetaMask, and Phantom, while ensuring data privacy and user control.
 
-Additionally, Data Connectors preprocess and structure your data into a personal knowledge graph, making it easily accessible and optimized for use by your Personal AI.
+Additionally, Data Connectors process and structure your data into a personal knowledge graph, making it easily accessible and optimized for use by your Personal AI.
 
-Data Connectors help you:
-- Choose which platforms to connect to, ensuring only approved data is processed.
-- Control how your Personal AI accesses and utilizes your data.
-- Store fetched data in user-designated trusted storage space.
-- Automate or manually fetch new data, ensuring your Personal AI stays up to date.
+### Data Connectors help you
+- Select specific sources to fetch only the data you need.
+- Store fetched data in a trusted location of your choice.
+- Control your Personal AI’s access and use of your data.
 
 <Info>A TEE is a secure area within a device's main processor that prevents external processes from accessing or altering the data inside. For more information about TEEs, <a href="/Infrastructure/TEE-Nodes">visit here</a>.</Info>
-
+***
 ## On-Device LLMs (Personal AI)
 
-On-device Large Language Models (LLMs) are self-contained, privacy-preserving AI models that run directly on your devices—smartphones, laptops, or private clouds—via the PIN AI app. Unlike cloud-based AI systems that transmit your personal data for processing, on-device LLMs perform inference locally, ensuring your data remains private and fully under your control.
+On-device Large Language Models (LLMs) are self-contained, privacy-preserving AI models that run directly on your devices—smartphones, laptops, or private clouds—via the PIN AI app. On-device LLMs process data directly on your device or in a secure, user-authorized environment. This keeps your data private and under your control.
 
-LLMs become your Personal AI by processing data stored locally as a Personal Index on your mobile device. By continuously learning from your history, preferences, and behavior, your Personal AI generates context-aware inferences and can take action in and across your mobile apps to assist with daily tasks.
+Your on-device LLM transforms into your Personal AI by accessing data fetched by Data Connectors and stored locally in your trusted location. By learning your history, preferences, and behavior, it generates context-aware insights and acts within and across your mobile apps to assist with daily tasks.
 
-Personal AI helps you: 
-- Interact with AI agents across the PIN Network.
-- Streamline online activities with AI-driven actions.
-- Leverage personalized insights and recommendations tailored to your data.
-
+### Personal AI helps you
+- Streamline your digital life with AI-powered automation.
+- Interact with AI agents across the PIN Economy. 
+- Receive personalized insights and recommendations tailored to you.
+***
 ## God Models
 
-God Models are a core component of the Personal AI Protocol. They are AI models that continuously validate and assess the quality of Personal AIs. They do this by evaluating how accurately and comprehensively each Personal AI understands its user's data and behaviors. This validation process drives the protocol's economic model by rewarding users based on their Personal AI’s demonstrated knowledge quality and data verification.
+Guardain of data (God) Models are a TEE-based specialized models that evaluate the performance and accuracy of Personal AIs, ensuring they effectively serve user needs. This process rewards users for having high-quality Personal AIs that accurately represent their data.
 
-Key functions include: 
-- **Benchmarking**: God Models use a series of questions to test the Personal AI's knowledge about its user, covering various aspects of their digital life.
-- **Scoring**: A scoring function measures the accuracy and consistency of the Personal AI's responses, providing an overall "knowledge score" that is used to reward user participation. 
-- **Anti-farming**: Measures are in place to prevent users from manipulating the system to artificially inflate their scores.
+### Key features
+- Operate securely within Trusted Execution Environments (TEEs).
+- Specialize in evaluating Personal AI performance.
+- Verify the accuracy and consistency of Personal AI responses.
 
-<Info>God stands for "Guardian of Data." The interactions between your Personal AI and our God Models are known only to you and the model.</Info>
+<Info>Interactions between your Personal AI and our God Models remain private—accessible only to you and the respective God Model.</Info>
