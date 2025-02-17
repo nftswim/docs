@@ -46,7 +46,7 @@ This section outlines how God Models evaluate and refine Personal AI performance
   </Step>
 
   <Step title="Response verification">
-    The Personal AI responds to queries referencing user data. The God Model checks the response against verified data logs or a previously stored state (where possible) to assess how effectively the Personal AI delivers user-specific contextual information to an external AI Agent.
+    The Personal AI responds to queries referencing user data. The God Model checks the response against verified data logs or a previously stored state (where possible) to assess how effectively the Personal AI delivers user-specific contextual information to an external AI agent.
   </Step>
 
   <Step title="Score adjustment">
@@ -68,7 +68,7 @@ This section outlines how God Models evaluate and refine Personal AI performance
 
 ## Scoring function
 
-The scoring function reflects how effectively the Personal AI delivers user-specific contextual information to an external Personal AI Agent, enabling it to accurately fulfill the user’s request. It is based on the following parameters:
+The scoring function reflects how effectively the Personal AI delivers user-specific contextual information to an external AI agent, enabling it to accurately fulfill the user’s request. It is based on the following parameters:
 
 <Steps>
   <Step title="Agentic user request coverage">
@@ -76,7 +76,7 @@ The scoring function reflects how effectively the Personal AI delivers user-spec
   </Step>
   
   <Step title="Consistency">
-    Cross-referencing data from multiple sources (e.g., does the travel booking date match the email confirmation date?).
+    Cross-referencing data from multiple sources (e.g., does the travel booking date match the email confirmation date).
   </Step>
   
   <Step title="Temporal accuracy">
@@ -106,8 +106,13 @@ Suppose each data source contributes up to 10 points:
 - **Web3**: Weighted at 2x if the user is highly active; else 1x.
 - **Other**: Weighted at 1x.
 
-Total Score = ∑(Weight_i × (Number_of_correct_responses_i / Number_of_questions_i)) / Normalizing_Factor
-where i spans the categories of questions.
+<Note>
+$Total Score = \sum \left( Weight_i \times \frac{Number\_of\_correct\_responses_i}{Number\_of\_questions_i} \right)
+\div Normalizing\_Factor$
+
+*Where i spans the categories of questions*
+</Note>
+
 ***
 ## Anti-farming and fraud prevention
 
