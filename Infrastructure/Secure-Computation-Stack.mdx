@@ -67,33 +67,3 @@ The following outlines how PIN AI processes and verifies computational tasks in 
         Nodes that fail validation incur penalties, ensuring network integrity and fairness.
     </Step>
 </Steps>
-
-```go
-// Main workflow example
-// Demonstrates complete data processing pipeline
-func ExampleWorkflow() {
-    // 1. User Registration and Authorization
-    client.Register(userInfo)
-    authToken := client.Authorize(oauthProvider)
-    
-    // 2. Node Registration and Staking
-    node.Register(nodeInfo)
-    node.Stake(stakeAmount)
-    
-    // 3. Data Submission and Processing
-    data := prepareData()
-    scheduler.VerifyData(data)
-    task := scheduler.GenerateTask(data)
-    
-    // 4. Task Distribution and Execution
-    scheduler.DispatchTask(task)
-    scheduler.BalanceLoad(availableNodes)
-    
-    // 5. TEE Processing
-    result := teeNode.ExecuteTask(task)
-    proof := teeNode.GenerateProof(result)
-    
-    // 6. Result Verification and Rewards
-    scheduler.VerifyResult(result)
-    chain.VerifyTask(proof)
-    ```
