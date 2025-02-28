@@ -45,10 +45,10 @@
             "pages": [
               "personal-ai-protocol/Overview",
               {
-              "group": "Data Connectors",
-              "pages": [
-                "personal-ai-protocol/Data-Connectors",
-                "personal-ai-protocol/Online-Data-Connectors"
+                "group": "Data Connectors",
+                "pages": [
+                  "personal-ai-protocol/Data-Connectors",
+                  "personal-ai-protocol/Online-Data-Connectors"
                 ]
               },
               {
