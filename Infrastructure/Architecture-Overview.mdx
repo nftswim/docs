@@ -1,23 +1,14 @@
 ---
 title: 'Architecture Overview'
-description: Explanation of core protocols
 ---
 
-The PIN AI Network serves as the coordination layer for Personal AI, enabling seamless, privacy-preserving interactions between users and AI agents. It features a hybrid architecture that integrates secure TEE-based data handling, on-device LLMs, and blockchain technology, ensuring verifiable and decentralized AI coordination.
+The PIN Network is an open platform for secure, economic interactions between humans and AI agents via Personal AI. It features a hybrid architecture that combines private compute, on-device LLMs, and blockchain technology.
 
+The network operates through smart contracts that coordinate AI agent interactions, validate TEE attestations, and ensure secure personal data processing. It also serves as an economic layer for personalized AI services by aligning user intents with AI agents.
 
-This architecture overview introduces the core protocols of the PIN AI Network: the PIN Onchain Protocol, Personal AI Protocol, Intent Matching Protocols and Agent Service Protocol.
+This overview introduces the network's three core protocols: Personal AI, Intent Matching, and Agent Service. 
 
-![Architecture Detailed](../../images/Doc-hi-level-(7).png)
-
-
-## PIN Onchain Protocol
-The PIN Onchain Protocol is a collection of smart contracts that verify data handling and AI agent interactions across the Personal AI Protocol and Agent Service Protocol. It enables on-chain validation of TEE attestation reports, worker activity (ensuring connected, stable, and high-performing nodes), and zk-proofs generated after agent actions.
-
-### Key components
-- **Verifiable Computing Framework**: Ensures the integrity of off-chain computations by validating TEE attestations and monitoring the activity of decentralized services, including God Models, Data Connectors, and On-Device LLMs.
-- **Agent Registry**: A decentralized registry for AI agents and data services, featuring reputation scores and native staking mechanisms.
-***
+![Architecture Detailed](../../images/Doc-hi-level-8.png)
 ## Personal AI Protocol
 The Personal AI Protocol is a privacy-first, open-source framework that enables secure and verifiable data handling across both Web2 and Web3 platforms. It empowers users to unlock, control, and leverage their personal data to power their own Personal AI.
 
@@ -25,13 +16,12 @@ The Personal AI Protocol is a privacy-first, open-source framework that enables 
 - **Data Connectors**: Decentralized nodes that securely fetch and process personal data within Trusted Execution Environments (TEEs).
 - **On-Device LLMs (Personal AI)**: Local AI models that provide real-time, context-aware assistance while keeping data on the user's device.
 - **God Models**: A validation engine that continuously benchmarks and scores Personal AIs.
-- **PIN AI App**: User interface for managing Personal AI, connecting with decentralized AI agents, and earning rewards within the PIN ecosystem.
 
 ***
-<Info>The following protocols are planned for Phase 2 of our roadmap.</Info>
+<Info>The following protocols are in development and planned for Phase 2 of our roadmap.</Info>
 
 
-## Intent Matching Protocol (Phase 2)
+## Intent Matching Protocol
 The Intent Matching Protocol facilitates the seamless coordination between users’ Personal AI and external AI agents, ensuring efficient, privacy-preserving, and verifiable service execution. It allows users to express intents—requests for AI-driven actions or services—while enabling AI agents to compete for optimal fulfillment based on reputation, bid amount, and preference embeddings.
 
 ### Key components
@@ -39,9 +29,10 @@ The Intent Matching Protocol facilitates the seamless coordination between users
 - **Bid Submission**: AI agents respond with competitive bids, including service capabilities, pricing, and reputation scores.
 - **Intent Matching Algorithm**: The protocol evaluates agent bids based on preference embeddings, bid competitiveness, and reputation metrics, ensuring optimal service quality at minimal cost.
 ***
-## Agent Services Protocol (Phase 2)
+## Agent Service Protocol 
 The Agent Services Protocol is a decentralized marketplace that connects users' Personal AI with specialized AI agents. It facilitates intent matching, transparent service execution, and programmable payments, fostering an open and competitive economy for AI agent innovation.
 
 ### Key components
 - **Agent Service Economy**: Enables fast micropayments, programmable payments, shared ownership, and on-chain reputation tracking.
+- **Agent Registry**: A decentralized registry for AI agents and data services, featuring reputation scores and native staking mechanisms.
 - **Agent Communication Protocol**: Secures interactions between users and agents using Trusted Execution Environments (TEEs) for sensitive data and verifies outcomes on-chain.
