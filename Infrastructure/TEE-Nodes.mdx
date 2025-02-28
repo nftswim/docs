@@ -26,7 +26,7 @@ Before a TEE executes any programs, the process of remote attestation ensures th
 
 This process ensures that tasks executed by a Trusted Execution Environment (TEE) node are properly validated and penalized if they fail. TEE task validation follows these steps:
 
-- **Proof submission**: The TEE node submits proof of its work to PIN Onchain Validators.
+- **Proof submission**: The TEE node submits proof of its work to PIN Network Validators.
 - **Validation**: Validators check if the submitted proof is valid and the task was completed correctly.
 - **Accountability**: If the task fails validation, the TEE node is penalized by slashing its staked funds.
 
@@ -65,4 +65,4 @@ This phase is triggered if task validation fails.
 - **emit NodeSlashed**: An event is emitted indicating that the node has been slashed.
 - **Return Success**: The penalty execution phase concludes successfully.
 
-TEE task validation ensures the integrity of computations performed within Trusted Execution Environments. Through proof submission, validation by PIN Onchain validators, and a penalty system for failed tasks, this process maintains accountability and the reliability of TEE-secured services in PIN AI Network.
+TEE task validation ensures the integrity of computations performed within Trusted Execution Environments. Through proof submission, validation by PIN Network Validators, and a penalty system for failed tasks, this process maintains accountability and the reliability of TEE-secured services in PIN AI Network.
