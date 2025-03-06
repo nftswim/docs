@@ -101,6 +101,17 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Developer Newsletter",
+        "groups": [
+          {
+            "group": "Developer Newsletter",
+            "pages": [
+              "GOD-builders-program"
+            ]
+          }
+        ]
       }
     ]
   },
